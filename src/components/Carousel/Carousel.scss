@@ -1,0 +1,25 @@
+.swiper {
+  width: 100%;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      background-color: var(--mainColor--skyblue100);
+      .sliderWrapper {
+        height: 600px;
+        display: flex;
+
+        .shoppingImg {
+          margin-left: 300px;
+        }
+      }
+    }
+
+    // @media screen and (min-width: 768px) {
+    //   width: 80%;
+    // }
+
+    // @media screen and (min-width: 1024px) {
+    //   width: 60%;
+    // }
+  }
+}
