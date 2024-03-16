@@ -1,0 +1,22 @@
+.desImgWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  .imgBackground {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .desImg {
+    width: 330px;
+    height: auto;
+    padding: 30px;
+  }
+}

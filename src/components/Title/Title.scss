@@ -1,0 +1,15 @@
+.titleWrapper {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+  }
+}
