@@ -11,3 +11,9 @@
 body {
   min-height: 100vh;
 }
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
