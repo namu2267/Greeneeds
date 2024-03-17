@@ -17,3 +17,13 @@ button {
   text-align: center;
   text-decoration: none;
 }
+
+input,
+textarea {
+  border: none;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
