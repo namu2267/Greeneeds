@@ -19,7 +19,7 @@ export default function MainPage() {
         imgSrc={greeneedsBody}
         imgClassName="desImg"
         path="/chat"
-        content="그리니즈는(Greeneeds)는 지구를 지키는 챗봇이에요. 환경과 관련된건 무엇이든 물어보세요. 그리니즈와 함께라면, ‘환경지키기’ 더 이상 어려운 일이 아니랍니다."
+        content={`그리니즈는(Greeneeds)는 지구를 지키는 챗봇이에요.\n 환경과 관련된건 무엇이든 물어보세요.\n 그리니즈와 함께라면, ‘환경지키기’ 더 이상 어려운 일이 아니랍니다.`}
         buttonContent="그리니즈에게 질문하러가기"
         buttonImgSrc={greeneedsSimpleWhite}
       />
@@ -31,7 +31,7 @@ export default function MainPage() {
         imgSrc={greeneedsStudy}
         imgClassName="desImg"
         path="/introduce"
-        content="그리니즈는 환경오염을 막으려고 지구에 왔어요. 환경을 살리기위해 우리들 대신,밤낮없이 공부하고 있어요."
+        content={`그리니즈는 환경오염을 막으려고 지구에 왔어요. \n 환경을 살리기위해 우리들 대신,밤낮없이 공부하고 있어요.`}
         buttonContent="그리니즈 더 알아보기"
         buttonImgSrc={greeneedsSimpleWhite}
       />
@@ -42,7 +42,7 @@ export default function MainPage() {
         imgSrc={chatbotUse}
         imgClassName="desImg"
         path="/chat"
-        content="그리니즈는(Greeneeds)는 지구를 지키는 챗봇이에요. 환경과 관련된건 무엇이든 물어보세요. 그리니즈와 함께라면, ‘환경지키기’ 더 이상 어려운 일이 아니랍니다."
+        content={`그리니즈는(Greeneeds)는 지구를 지키는 챗봇이에요.\n 환경과 관련된건 무엇이든 물어보세요. \n 그리니즈와 함께라면, ‘환경지키기’ 더 이상 어려운 일이 아니랍니다.`}
         buttonContent="챗봇 사용법 알아보기"
         buttonImgSrc={greeneedsSimpleWhite}
       />

@@ -28,7 +28,7 @@ export default function Carousel() {
       if (error) {
         throw error;
       }
-      console.log(data);
+
       setCarouselData(data);
     };
 
