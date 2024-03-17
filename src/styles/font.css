@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "HSSantokki-Regular";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/font/HSSantokki-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Light";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/font/Pretendard-Light.ttf") format("ttf");
+}
