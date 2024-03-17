@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { supabase } from "../../utils/supabase";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CarouselContiner from "../Carousel/CarouselContiner";
 import "swiper/scss";
@@ -9,7 +10,43 @@ import { Navigation } from "swiper/modules";
 import cycle from "../../assets/gif/Girl Cycling in autumn.gif";
 import shopping from "../../assets/gif/Woman Shopping Online.gif";
 
+interface CarouselItem {
+  id: string;
+  title: string;
+  content: string;
+  created_at: string;
+  img: string;
+  imgClassName?: string;
+}
+
 export default function Carousel() {
+  const [carouselData, setCarouselData] = useState<CarouselItem[]>([]);
+
+  useEffect(() => {
+    const fetchCarouselData = async () => {
+      const { data, error } = await supabase.from("carousel").select("*");
+      if (error) {
+        throw error;
+      }
+      console.log(data);
+      setCarouselData(data);
+    };
+
+    fetchCarouselData();
+  }, []);
+
+  const getImageByName = (imgName: string): string => {
+    switch (imgName) {
+      case "cycle":
+        return cycle;
+      case "shopping":
+        return shopping;
+
+      default:
+        return imgName;
+    }
+  };
+
   return (
     <>
       <Swiper
@@ -22,17 +59,16 @@ export default function Carousel() {
         autoplay={{ delay: 3000 }}
         scrollbar={{ draggable: true }}
       >
-        <SwiperSlide>
-          <CarouselContiner title="타이틀" gif={cycle} contents="콘텐츠" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselContiner
-            title="타이틀"
-            gif={shopping}
-            contents="콘텐츠"
-            imgClassName="shoppingImg"
-          />
-        </SwiperSlide>
+        {carouselData.map((item: CarouselItem) => (
+          <SwiperSlide key={item.id}>
+            <CarouselContiner
+              title={item.title}
+              content={item.content}
+              img={getImageByName(item.img)}
+              imgClassName={item.imgClassName}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
