@@ -40,7 +40,7 @@ export default function Description({
             alt={alt}
             imgClassName={imgClassName}
           />
-          <p>{content}</p>
+          <pre>{content}</pre>
           <LinkButton
             path={path}
             buttonContent={buttonContent}

@@ -11,6 +11,24 @@
         .shoppingImg {
           margin-left: 300px;
         }
+
+        .swiperContents {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          padding: 100px;
+
+          h1 {
+            font-family: "HSSantokki-Regular";
+            font-size: 50px;
+          }
+
+          p {
+            font-family: "Pretendard-Light";
+            font-size: 20px;
+          }
+        }
       }
     }
 
