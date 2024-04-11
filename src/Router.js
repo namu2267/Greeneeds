@@ -3,8 +3,8 @@ import App from "./App";
 import NotFound from "./pages/Notfound.tsx";
 import MainPage from "../src/pages/Main/MainPage.tsx";
 import ChatPage from "./pages/Chat/ChatPage.tsx";
-import Introduce from "./pages/IntroducePage.tsx";
 import SustainabilityPage from "./pages/Sustainability/SustainabilityPage.tsx";
+import IntroducePage from "./pages/Introduce/IntroducePage";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         path: "introduce",
-        element: <Introduce />,
+        element: <IntroducePage />,
       },
       {
         index: true,
